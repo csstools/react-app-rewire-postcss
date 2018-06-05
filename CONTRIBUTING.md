@@ -26,7 +26,7 @@ scope and avoid unrelated commits.
    cd react-app-rewire-postcss
 
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream git@github.com:jonathantneal/react-app-rewire-postcss.git
+   git remote add upstream git@github.com:csstools/react-app-rewire-postcss.git
 
    # Install the tools necessary for testing
    npm install

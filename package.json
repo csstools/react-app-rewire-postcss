@@ -1,12 +1,12 @@
 {
   "name": "react-app-rewire-postcss",
-  "version": "1.0.0",
-  "description": "Configure PostCSS plugins in Create React App without ejecting",
+  "version": "1.0.1",
+  "description": "Configure PostCSS in Create React App without ejecting",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",
-  "repository": "jonathantneal/react-app-rewire-postcss",
-  "homepage": "https://github.com/jonathantneal/react-app-rewire-postcss#readme",
-  "bugs": "https://github.com/jonathantneal/react-app-rewire-postcss/issues",
+  "repository": "csstools/react-app-rewire-postcss",
+  "homepage": "https://github.com/csstools/react-app-rewire-postcss#readme",
+  "bugs": "https://github.com/csstools/react-app-rewire-postcss/issues",
   "main": "index.cjs.js",
   "module": "index.es.js",
   "files": [

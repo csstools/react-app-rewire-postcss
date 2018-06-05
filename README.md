@@ -4,8 +4,8 @@
 [![Build Status][cli-img]][cli-url]
 [![Support Chat][git-img]][git-url]
 
-[React App Rewire PostCSS] lets you configure PostCSS plugins in
-[Create React App] without ejecting.
+[React App Rewire PostCSS] lets you configure PostCSS in [Create React App]
+without ejecting.
 
 ## Usage
 
@@ -15,67 +15,72 @@ Add [React App Rewired] and [React App Rewire PostCSS] to your React app:
 npm install react-app-rewired react-app-rewire-postcss --save-dev
 ```
 
-Add [React App Rewire PostCSS] to the `config-overrides.js` file in your React
-app directory:
+Next, add [React App Rewire PostCSS] to `config-overrides.js` in your React app
+directory:
 
 ```js
-/* config-overrides.js */
+module.exports = config => {
+  require('react-app-rewire-postcss')(config);
 
-const { rewirePostCss } = require('react-app-rewire-postcss');
-
-module.exports = function override(config, env) {
-  //do stuff with the webpack config...
-  return rewirePostCss(config /*, options */);
-}
+  return config;
+};
 ```
 
-Now you can control PostCSS with the configuration options in [PostCSS Loader]:
+That’s it! Now you can control PostCSS with all the configuration options from
+[PostCSS Loader]:
 
 ```js
-/* config-overrides.js */
-
-const { rewirePostCss } = require('react-app-rewire-postcss');
-
-module.exports = function override(config, env) {
-  //do stuff with the webpack config...
-  return rewirePostCss(config, {
+module.exports = config => {
+  require('react-app-rewire-postcss')(config, {
      plugins: loader => [
       require('postcss-preset-env')()
     ]
   });
-}
+
+  return config;
+};
 ```
 
-You can also use `postcss.config.js` in your React app directory:
+Alternatively, you can use `postcss.config.js` in your React app directory:
 
 ```js
 module.exports = {
   plugins: {
-    'postcss-preset-env': { stage: 0 }
+    'postcss-preset-env': {
+      stage: 0
+    }
   }
 };
 ```
 
-And you can also use `.browserslistrc` in your React app directory:
+And you can leverage [Browserslist] by adding a `.browserslistrc` to your React
+app directory:
 
-```rc
+<img src="https://pbs.twimg.com/profile_images/875021827495665665/-N99XiJV_200x200.jpg" alt="" align="right" height="108">
+
+```yaml
+# browsers we support
+
 > 2%
 not dead
 ```
 
+---
+
 Happy PostCSS’ing!
 
-[cli-img]: https://img.shields.io/travis/jonathantneal/react-app-rewire-postcss.svg
-[cli-url]: https://travis-ci.org/jonathantneal/react-app-rewire-postcss
+[cli-img]: https://img.shields.io/travis/csstools/react-app-rewire-postcss.svg
+[cli-url]: https://travis-ci.org/csstools/react-app-rewire-postcss
 [git-img]: https://img.shields.io/badge/support-chat-blue.svg
 [git-url]: https://gitter.im/postcss/postcss
 [npm-img]: https://img.shields.io/npm/v/react-app-rewire-postcss.svg
 [npm-url]: https://www.npmjs.com/package/react-app-rewire-postcss
 
+[Browserslist]: https://github.com/browserslist/browserslist
 [Create React App]: https://github.com/facebook/create-react-app
 [Gulp PostCSS]: https://github.com/postcss/gulp-postcss
 [Grunt PostCSS]: https://github.com/nDmitry/grunt-postcss
 [PostCSS]: https://github.com/postcss/postcss
 [PostCSS Loader]: https://github.com/postcss/postcss-loader
-[React App Rewire PostCSS]: https://github.com/jonathantneal/react-app-rewire-postcss
+[React App Rewire PostCSS]: https://github.com/csstools/react-app-rewire-postcss
 [React App Rewired]: https://github.com/timarney/react-app-rewired
