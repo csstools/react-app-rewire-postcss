@@ -38,4 +38,4 @@ const findIndexAndRules = (rulesSource, ruleMatcher) => {
 
 const ruleChildren = loader => loader.use || loader.oneOf || Array.isArray(loader.loader) && loader.loader || [];
 
-const postcssLoaderMatcher = rule => rule.loader && rule.loader.indexOf(`/postcss-loader/`) !== -1;
+const postcssLoaderMatcher = rule => rule.loader && /\bpostcss-loader\b/.test(rule.loader);
