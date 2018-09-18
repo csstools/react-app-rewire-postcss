@@ -1,5 +1,6 @@
 export default (config, options) => {
-	const postcssLoader = findRule(config.module.rules, postcssLoaderMatcher);
+	const clone = Object.assign({}, config);
+	const postcssLoader = findRule(clone.module.rules, postcssLoaderMatcher);
 
 	postcssLoader.loader = require.resolve('postcss-loader');
 
@@ -7,7 +8,7 @@ export default (config, options) => {
 
 	Object.assign(postcssLoader.options, options);
 
-	return config;
+	return clone;
 };
 
 const findRule = (rulesSource, ruleMatcher) => {
