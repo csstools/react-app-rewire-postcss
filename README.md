@@ -4,15 +4,15 @@
 [![Build Status][cli-img]][cli-url]
 [![Support Chat][git-img]][git-url]
 
-[React App Rewire PostCSS] lets you configure PostCSS in [Create React App]
-without ejecting.
+[React App Rewire PostCSS] lets you configure [PostCSS] in [Create React App]
+v1 and v2 without ejecting.
 
 ## Usage
 
-Add [React App Rewired] and [React App Rewire PostCSS] to your React app:
+Add [React App Rewire PostCSS] to your [Rewired] React app:
 
 ```bash
-npm install react-app-rewired react-app-rewire-postcss --save-dev
+npm install react-app-rewire-postcss --save-dev
 ```
 
 Next, add [React App Rewire PostCSS] to `config-overrides.js` in your React app
@@ -41,7 +41,7 @@ module.exports = config => {
 };
 ```
 
-Alternatively, you can use `postcss.config.js` in your React app directory:
+Alternatively, you can now use `postcss.config.js` in your React app directory:
 
 ```js
 module.exports = {
@@ -84,3 +84,4 @@ Happy PostCSS’ing!
 [PostCSS Loader]: https://github.com/postcss/postcss-loader
 [React App Rewire PostCSS]: https://github.com/csstools/react-app-rewire-postcss
 [React App Rewired]: https://github.com/timarney/react-app-rewired
+[rewired]: https://github.com/timarney/react-app-rewired#how-to-rewire-your-create-react-app-project

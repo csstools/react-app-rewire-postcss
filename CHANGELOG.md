@@ -1,5 +1,12 @@
 # Changes to React App Rewire PostCSS
 
+### 3.0.0 (October 3, 2018)
+
+- Updated: Support for Create React App 2.
+- Changed: The old PostCSS plugins are no longer erased, making
+  configuration-less usage of this plugin seemingly invisible. The plugins are
+  still replaced the same way.
+
 ### 2.0.0 (September 17, 2018)
 
 - Changed: A new configuration is returned, instead of the existing
