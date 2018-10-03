@@ -1,0 +1,13 @@
+@custom-media --narrow-window (width > 1px);
+
+body {
+  margin: 0;
+
+  @media (--narrow-window) {
+    font-family: "Comic Sans MS";
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
