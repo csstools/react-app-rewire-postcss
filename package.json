@@ -1,6 +1,6 @@
 {
   "name": "react-app-rewire-postcss",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Configure PostCSS in Create React App without ejecting",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",
@@ -28,14 +28,14 @@
     "postcss-loader": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.6.1",
-    "eslint-config-dev": "^2.0.0",
-    "pre-commit": "^1.2.2",
-    "rollup": "^0.66.3",
-    "rollup-plugin-babel": "^4.0.1"
+    "@babel/core": "7.1.2",
+    "@babel/preset-env": "7.1.0",
+    "babel-eslint": "9.0.0",
+    "eslint": "5.6.0",
+    "eslint-config-dev": "2.0.0",
+    "pre-commit": "1.2.2",
+    "rollup": "0.66.5",
+    "rollup-plugin-babel": "4.0.3"
   },
   "eslintConfig": {
     "extends": "dev",

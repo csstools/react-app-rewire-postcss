@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "react": "^16.5.2",
+    "react-app-rewire-postcss": "..",
+    "react-app-rewired": "^1.6.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "2.0.3"
+    "react-scripts": "2.0.4"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -21,9 +23,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "react-app-rewire-postcss": "..",
-    "react-app-rewired": "^1.6.2"
-  }
+  ]
 }

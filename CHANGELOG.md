@@ -1,5 +1,9 @@
 # Changes to React App Rewire PostCSS
 
+### 3.0.1 (October 9, 2018)
+
+- Fixed: Issue with `build`
+
 ### 3.0.0 (October 3, 2018)
 
 - Updated: Support for Create React App 2.

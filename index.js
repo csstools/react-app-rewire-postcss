@@ -2,7 +2,7 @@ export default (config, options) => {
 	// find any first matching rule that contains postcss-loader
 	filterPostCSSLoader(config.module.rules).forEach(rule => {
 		filterPostCSSLoader(rule.oneOf).forEach(oneOf => {
-			filterPostCSSLoader(oneOf.use).forEach(use => {
+			filterPostCSSLoader(oneOf.use || oneOf.loader).forEach(use => {
 				// use the latest version of postcss-loader
 				use.loader = require.resolve('postcss-loader');
 
