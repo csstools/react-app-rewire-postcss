@@ -1,6 +1,6 @@
 {
   "name": "react-app-rewire-postcss",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Configure PostCSS in Create React App without ejecting",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",

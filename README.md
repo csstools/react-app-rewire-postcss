@@ -20,7 +20,7 @@ directory:
 
 ```js
 module.exports = config => {
-  require('react-app-rewire-postcss')(config);
+  require('react-app-rewire-postcss')(config/*, options */);
 
   return config;
 };
@@ -42,6 +42,14 @@ module.exports = config => {
 ```
 
 Alternatively, you can now use `postcss.config.js` in your React app directory:
+
+```js
+module.exports = config => {
+  require('react-app-rewire-postcss')(config, true /* any truthy value will do */);
+
+  return config;
+};
+```
 
 ```js
 module.exports = {

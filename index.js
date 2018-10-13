@@ -6,8 +6,10 @@ export default (config, options) => {
 				// use the latest version of postcss-loader
 				use.loader = require.resolve('postcss-loader');
 
-				// update the options with your custom configuration
-				Object.assign(use.options, options);
+				// conditionally replace options with a custom configuration
+				use.options = options
+					? Object.assign({ ident: 'postcss' }, options)
+				: Object.assign(use.options, options)
 			})
 		})
 	});

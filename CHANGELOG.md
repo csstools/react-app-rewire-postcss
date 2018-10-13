@@ -1,5 +1,9 @@
 # Changes to React App Rewire PostCSS
 
+### 3.0.2 (October 13, 2018)
+
+- Fixed: Issue with loading from postcss.config.js file
+
 ### 3.0.1 (October 9, 2018)
 
 - Fixed: Issue with `build`
