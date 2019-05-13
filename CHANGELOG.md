@@ -1,5 +1,9 @@
 # Changes to React App Rewire PostCSS
 
+### 4.0.0 (May 12, 2019)
+
+- Updated: Node 8+ compatibility (major)
+
 ### 3.0.2 (October 13, 2018)
 
 - Fixed: Issue with loading from postcss.config.js file
