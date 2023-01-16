@@ -1,3 +1,5 @@
+<div align="center">⚠️ React App Rewire PostCSS has been deprecated. ⚠️</div>
+
 # React App Rewire PostCSS [<img src="https://postcss.github.io/postcss/logo.svg" alt="PostCSS Logo" width="90" height="90" align="right">][postcss]
 
 [![NPM Version][npm-img]][npm-url]
